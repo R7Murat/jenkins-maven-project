@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -f hello-app/pom.xml -B -DskipTests clean package'
-                sh 'echo paket başarıyla oluşturuldu'
+                sh 'echo paket başarıyla oluşturuldu. !'
             }
             post {
                 success {
